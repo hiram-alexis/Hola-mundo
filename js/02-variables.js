@@ -1,3 +1,4 @@
+'use strict'
 //VARIABLES
 //Es un contenedor de infromación. Guardara cualquier tipo de dato.
 
