@@ -25,20 +25,22 @@ if (edad1 > edad2) {
 */
 
 
-var edad =34;
+var edad = 19;
 var nombre = "Alexis Sanchez";
 
 if (edad >= 18) {
 	//Es mayor de edad
-	console.log(nombre+" tiene "+edad+ " años, es mayor de edad.");
+	console.log(nombre+" tiene "+edad+ " años, es MAYOR de edad.");
 //Segundo if
-if (edad == 33) {
+if (edad <= 33) {
 	console.log("Todavia eres milenial");
-}else {	//Segundo else
+}else if (edad >= 70) {	//Segundo else
+	console.log("Eres anciano");
+} else {
 	console.log("Ya no eres milenial");
-}	//Fin del primer if
+}	//Fin del primer else if
 	
 } else {	//Else del primer if
 	//Es menor de edad
-console.log(nombre+" tiene "+edad+ " años, es menor de edad.");	
+console.log(nombre+" tiene "+edad+ " años, es MENOR de edad.");	
 }
