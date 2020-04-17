@@ -3,12 +3,19 @@
 /*
 Programa qu epida dos numeros y que nos diga cual 
  el mayor, el menor y si son iguales.
+ PLUS: Si los numeros no son un numero, o son iguales
+ o menores a 0, entonces nos vuelva a pedir los numeros.
 */
 
 var numero1 = parseInt(prompt("Introduce el primer numero", 0));
 var numero2 = parseInt(prompt("Introduce el segundo numero", 0));
 
-console.log(numero2, numero1);
+//console.log(numero2, numero1);
+while(numero1 <=0 || numero2 <=0 || isNaN(numero1) || isNaN(numero2)){
+numero1 = parseInt(prompt("Introduce el primer numero", 0));
+numero2 = parseInt(prompt("Introduce el segundo numero", 0));
+
+}	
 
 if (numero1 == numero2) {
 	alert("Los numeros son iguales");
