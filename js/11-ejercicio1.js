@@ -10,12 +10,14 @@ Programa qu epida dos numeros y que nos diga cual
 var numero1 = parseInt(prompt("Introduce el primer numero", 0));
 var numero2 = parseInt(prompt("Introduce el segundo numero", 0));
 
-//console.log(numero2, numero1);
-while(numero1 <=0 || numero2 <=0 || isNaN(numero1) || isNaN(numero2)){
-numero1 = parseInt(prompt("Introduce el primer numero", 0));
-numero2 = parseInt(prompt("Introduce el segundo numero", 0));
+	while(numero1==0 || isNaN(numero1)){
+	numero1 = parseInt(prompt("Introduce el primer numero", 0));
+	}
 
-}	
+	while(numero2 ==0 || isNaN(numero2)){
+	numero2 = parseInt(prompt("Introduce el segundo numero", 0));
+	}
+	
 
 if (numero1 == numero2) {
 	alert("Los numeros son iguales");
