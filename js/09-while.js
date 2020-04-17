@@ -14,3 +14,10 @@ console.log("Estamos en el año: "+ year);
 year --;
 }
 
+//DO WHILE
+
+var years =30;
+do{
+alert("SOLO CUANDO SEA DIFERENTE A 20");
+years --;
+} while (years > 25)
