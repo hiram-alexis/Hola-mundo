@@ -25,6 +25,7 @@ function(dato){
 	console.log("La suma por dos es: ", dato*2)
 }
 );
+
 /*
 console.log(
 	sumame(4,5)
