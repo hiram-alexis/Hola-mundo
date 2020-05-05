@@ -3,7 +3,7 @@
 //Transformacion de textos de variables
 
 var numero = 444;
-var texto1 = "Bienvenido al curso JavaScript, curso valioso";
+var texto1 = "   Bienvenido al curso JavaScript, curso valioso   ";
 var texto2 = " Es un buen curso";
 /*
 var dato = numero.toString();
@@ -35,6 +35,13 @@ var textoTotal = texto1.concat (""+texto2); //concatenar textos
 //var busqueda = texto1.charAt(22); //una letra en una posicion especifica
 //var busqueda = texto1.startsWith("Bienvenido");//nos va a decir si esta la palabra en el inicio.
 //var busqueda = texto1.endsWith("valioso");//nos va a decir si esta la palabra en el final.
-var busqueda = texto1.includes("JavaScript");//nos va a decir si esta la palabra en el final.
+//var busqueda = texto1.includes("JavaScript");//nos va a decir si existte esta palabra en el final.
+//var busqueda = texto1.replace("JavaScript","Synfony");//Reemplazar una palabra por otra.
+//var busqueda = texto1.slice(14);//Cortara la frase los primero 14 digitos de ella.
+//var busqueda = texto1.slice(14,22);//Cortara la frase desde los primero 14 digitos y despues del digito 22 de la frase.
+//var busqueda = texto1.split("");//Agrega toda la frase a un Array
+var busqueda = texto1.trin();//Quita los espacios sobrantes adelante y atras del texto.
+
+
 
  console.log(busqueda);	//otra forma igual a la primera de hacer busqueda de texto.
