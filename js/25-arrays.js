@@ -22,10 +22,26 @@ if(elemento>=nombres.length){
 }
 //alert(nombres[elemento]); //Sacar un elemento selecinoado por el usuario
 */
+/*
 //Para llamar a todo el array
 document.write("Lenguajes de programación del 2020");
+document.write("<ul>");
 //Creamos un bucle for
 for (var i = 0; i < lenguajes.length; i++) {	//nuestra variable i comienza en 0, la condición es que mientras la variable sea menor que el último elemento, la variable valla aumentando uno.
 	document.write("<li>"+lenguajes[i]+"</li>");
 	}
 	document.write("</ul>");
+	*/
+
+//Metodo forEach, es otra forma mas simple de llamar todo el array.
+	document.write("Lenguajes de programación del 2020");
+	document.write("<ul>");
+
+
+		lenguajes.forEach((elemento, indice, arr)=>{
+		//	console.log(arr); //Ver que tiene dentro el arreglo.
+			document.write("<li>"+indice+".-"+ elemento+"</li>");
+
+		});
+
+		document.write("</ul>");
