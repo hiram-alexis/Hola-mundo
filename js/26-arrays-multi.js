@@ -44,4 +44,7 @@ if(indice > -1){
 
 //Convertir un array a un texto
 var peliculas_string = peliculas.join();
-console.log(peliculas_string); //Mostrar e consola el arreglo.
+//convertir un texto a un aaray
+var cadena = "Texto1, Texto2, Texto3"; //Creamos un array
+var cadena_array = cadena.split(" , "); //Marcamos que cada elemento depues de: " , " , sera un elemento del array
+console.log(cadena_array); //Mostrar e consola el arreglo.
