@@ -6,6 +6,11 @@ var categorias = ["Accion", "Terror", "Comedia","Romance","Terror", "Suspenso"];
 //Segundo array
 var peliculas = ["La verdad duele", "La vida es buena", "Gran torino"]; 
 //Array multidimencional
+//peliculas.sort();//Acomoda el array de forma alfabetica
+peliculas.reverse(); //Acomoda de manera contraria el Array
+console.log(peliculas);	
+
+
 var cine = [categorias, peliculas]; 
   /*
   Para mandar a llamar datos de nuestro 
