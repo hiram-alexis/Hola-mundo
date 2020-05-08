@@ -51,3 +51,19 @@ for(let lenguaje in lenguajes){
 }
 
 		document.write("</ul>");
+
+//Busquedas especifica de un dato
+/*
+var busqueda = lenguajes.find(function(lenguaje){
+	return lenguaje == "PHP";
+});*/
+
+//Forma simple de realizar la misma busqueda del array
+//var busqueda = lenguajes.find(lenguaje => lenguaje == "PHP");
+//Para que muestre el indice en lugar del elemento
+var precios = [10, 20, 50, 80, 12];
+//var busqueda = lenguajes.findIndex(lenguaje => lenguaje == "PHP");
+//Para hacer busquedas sobre si hay valores mayores o menores a uno declarado.
+var busqueda = precios.some(precios => precios <10 );
+
+console.log(busqueda);
