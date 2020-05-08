@@ -37,11 +37,17 @@ for (var i = 0; i < lenguajes.length; i++) {	//nuestra variable i comienza en 0,
 	document.write("Lenguajes de programación del 2020");
 	document.write("<ul>");
 
-
+/*
 		lenguajes.forEach((elemento, indice, arr)=>{
 		//	console.log(arr); //Ver que tiene dentro el arreglo.
 			document.write("<li>"+indice+".-"+ elemento+"</li>");
 
 		});
+*/
+//Esta es una forma mas elegante de recorrer un arreglo.
+for(let lenguaje in lenguajes){
+	document.write("<li>"+lenguajes[lenguaje]+"</li>");	
+
+}
 
 		document.write("</ul>");
