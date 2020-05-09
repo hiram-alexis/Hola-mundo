@@ -20,16 +20,28 @@ for(var i = 0; i<=5; i++){
 	numeros[i] = parseInt(prompt("Introduce un numero: ",0));
 }
 */
-
+function mostrarArray(elementos, textoCustom = ""){
+	document.write("<h1>Contenido del array "+textoCustom+"</h1>");
+	document.write("<ul>");
+	elementos.forEach((elementos, index) =>{
+		document.write("<li>"+elementos+"</li>");
+	});
+		document.write("</ul>");
+}
 //Otra forma de hacerlo 
 var numeros = [];
 for(var i = 0; i<=5; i++){
 	numeros.push(parseInt(prompt("Introduce un numero: ",0)))
 }
 //Mostrarlo en el cuerpo de la paguina
-document.write("<h1> Contenido del array </h1>");
-numeros.forEach((numero, index) =>{
-	document.write("<strong>"+numero+"</strong><br/>");
-})
+mostrarArray(numeros);
 //Mostramos en consola
 console.log(numeros);
+
+//Orgenar de forma ascendente y mostrar
+numeros.sort(function(a,b){return a-b});
+mostrarArray(numeros, 'ordenado');
+
+//Invertir y mostrar
+numeros.reverse();
+mostrarArray(numeros, 'revertido');
