@@ -45,3 +45,21 @@ mostrarArray(numeros, 'ordenado');
 //Invertir y mostrar
 numeros.reverse();
 mostrarArray(numeros, 'revertido');
+
+//Contar elementos 
+document.write("<h1> El array tiene "+ numeros.length +" elementos");
+
+//Busqueda de un elemento
+ var busqueda = parseInt(prompt("Busca un numero: ",0));
+
+var posición = numeros.findIndex(numero => numero == busqueda);
+
+if (posición && posición != -1) {
+
+ document.write("<hr/><h1>Encontrado</h1>");
+ document.write("<h1>Posición de la busqueda: "+ posición+"</h1><hr/>");
+} else{
+document.write("<hr/><h1>No encontrado</h1><hr/>");
+
+}
+
