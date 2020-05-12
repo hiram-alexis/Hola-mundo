@@ -17,7 +17,7 @@ caja.style.background = "red";
 caja.style.padding = "20px";
 caja.style.color = "white";
 caja.className = "hola hola2"; 
-console.log(caja);
+//console.log(caja);
 
 //Conseguir elementos por su etiqueta
 var todosLosDivs = document.getElementsByTagName('div');
@@ -45,7 +45,35 @@ seccion.append(hr);
 //console.log(contenidoEnTexto);
 //Conseguir elementos por su clase
 
+var divsRojos = document.getElementsByClassName('rojo');
+var divsAmarillos = document.getElementsByClassName('amarillo');
+/*
+divsRojos.style.background = "red"; //No se puede hacer de manera gloval por ser varios
+divsRojos[0].style.background = "blue"; //Para que funciones se selecciona un indice
+divsRojos[1].style.background = "green";
+*/
+//ó mediante un bucle para tomar los dos
+divsAmarillos[0].style.background = "yellow";
 
+var div;
+for(div in divsRojos){
+	if (divsRojos[div].className == "rojo") {
+		divsRojos[div].style.background = "green"; 
+	}
+}
+
+
+//Querry selector, solo aplica con un elemento
+var id = document.querySelector("#encabezado");
+console.log(id);
+
+
+var claseRojo = document.querySelector(".rojo");
+console.log(claseRojo);
+
+var etiqueta = document.querySelector("div");
+console.log(etiqueta);
+//console.log(divsRojos);
 //black purple pinck blue red brown 
 
 
