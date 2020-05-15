@@ -7,7 +7,7 @@
 window.addEventListener('load', ()=>{
 		function cambiarColor(){
 			var bg =boton.style.background;
-			if (bg == "green") {
+			if (this == "green") {
 				boton.style.background = "blue";
 
 			}else{
@@ -23,17 +23,19 @@ window.addEventListener('load', ()=>{
 		//Click
 		boton.addEventListener('click', function(){
 				cambiarColor();
+				console.log(this);
+				this.style.border = "10px solid black";
 		});
 
 		//Mouse over, pasar el raton por encima
 
 		boton.addEventListener('mouseover', function(){
-			boton.style.background ="yellow";
+			this.style.background ="yellow";
 		});
 
 		//Mouse out
 		boton.addEventListener('mouseout', function(){
-			boton.style.background ="brown";
+			this.style.background ="brown";
 		});
 
 		//Focus
