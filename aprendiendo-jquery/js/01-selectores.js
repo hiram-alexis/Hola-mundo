@@ -1,0 +1,30 @@
+// el simbolo $ y "jQuery" son lo mismo
+//jQuery(document).ready(function(){
+/*
+$ = un objeto
+() = selector
+.ready = metodo que es un evento
+(function(){}); = funcion de callback
+console.log(""); = llamar o mostrar lo que querramos.
+*/
+
+$(document).ready(function(){
+/*	Selectores:
+1.-Selector id
+
+*/
+
+/*Con el metodo ".css" podemos modificar cualquier 
+propiedad css, poniendo primero paramertro la clave(background),
+y segundo el valor(red).
+*/
+
+	$("#rojo").css("background", "red")
+			.css("color", "white");
+	$("#amarillo").css("background", "yellow")
+				.css("color","green");
+	$("#verde").css("background","green")
+				.css("color", "white");
+	//console.log("Estamos listos!");
+	//console.log(rojo);
+	});
