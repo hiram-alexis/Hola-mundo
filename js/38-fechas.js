@@ -16,3 +16,4 @@ var textoHora= `
 	Los segundos son: ${segundos}
 `;
 console.log (textoHora); 
+console.log(Math.ceil(Math.random()*10000));
