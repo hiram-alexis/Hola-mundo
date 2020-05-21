@@ -9,7 +9,7 @@ var segundos = fecha.getSeconds();
 
 var textoHora= `
 	El año es: ${year}
-	El mes es: ${mes +1} //Le sumamos 1 ya que comienza a leer desde 0
+	El mes es: ${mes +1}
 	El dia es: ${dia}
 	La hora es: ${hora}
 	Los minutos son: ${minutos}
@@ -17,3 +17,6 @@ var textoHora= `
 `;
 console.log (textoHora); 
 console.log(Math.ceil(Math.random()*10000));
+console.log(Math.LN2);	// función Logaritmo natural de 2
+console.log(Math.PI *10);	//El radio de un circulo de 10.
+console.log(Math.log(5));	//ogaritmo de x numero.
