@@ -11,14 +11,14 @@ console.log(""); = llamar o mostrar lo que querramos.
 $(document).ready(function(){
 /*	Selectores:
 1.-Selector id
-
+2,.Selector de clase
 */
 
 /*Con el metodo ".css" podemos modificar cualquier 
 propiedad css, poniendo primero paramertro la clave(background),
 y segundo el valor(red).
 */
-
+//Selector ID
 	$("#rojo").css("background", "red")
 			.css("color", "white");
 	$("#amarillo").css("background", "yellow")
@@ -27,4 +27,14 @@ y segundo el valor(red).
 				.css("color", "white");
 	//console.log("Estamos listos!");
 	//console.log(rojo);
+
+	//Selector de clases
+	var mi_clase = $('.zebra');
+	//console.log(mi_clase[0]);
+	//console.log(mi_clase.eq(1));
+	mi_clase.css("padding","5px");
+
+		$('.sin_borde').click(function(){
+			$(this).addClass('zebra');
+		});
 	});
