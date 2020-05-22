@@ -50,8 +50,16 @@ y segundo el valor(red).
 				that.removeClass('grande');
 			}
 		});
-						//Selectores de atributo
-			$('[title="Google"]').css('background', '#ccc');
-			$('[title="Facebook"]').css('background', 'blue');
-
+//Selectores de atributo
+	$('[title="Google"]').css('background', '#ccc');
+	$('[title="Facebook"]').css('background', 'blue');
+//Otros selectores
+	//$('p, a').addClass('margen-superior');
+	/*
+	var busqueda = $("#caja").find('.resaltado');	//un arbol muy grande
+	var busqueda = $("#caja .resaltado");
+	var busqueda = $("#caja .resaltado").eq(0).parent().parent().parent().find('[title="Google"]');
+	*/
+	var busqueda = $("#elemento2").parent().parent().find('.resaltado');
+	console.log(busqueda);
 	});
