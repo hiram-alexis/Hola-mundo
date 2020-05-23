@@ -29,12 +29,31 @@ function cambiaVerde(){
 	});
 	//Focus y  bkur
 	var nombre = $("#nombre")
+	var datos = $("#datos")
 	nombre.focus(function(){
 		$(this).css("border","2px solid green");
 	});
 	nombre.blur(function(){
 		$(this).css("border","1px solid #ccc");
-		$("#datos").text($(this).val()).show();
+		datos.text($(this).val()).show();
 	});
 
+	// MouseDown y MouseUp
+		datos.mousedown(function(){
+			$(this).css("border-color", "gray");
+		});
+			datos.mouseup(function(){
+				$(this).css("border-color", "pink");
+			});
+	//MouseMove
+	$(document).mousemove(function(){
+		/* 
+		console.log("En X: "+event.clientX);
+		console.log("En Y: "+event.clientY);
+		*/
+		$('body').css("cursor","none");
+		$("#sigueme").css("left", event.clientX)
+					 .css("top", event.clientY);
+		
+	});
 });
