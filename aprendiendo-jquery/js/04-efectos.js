@@ -13,7 +13,9 @@ $("#mostrar").hide();
 
 		//$("#caja").fadeIn("slow");	//Desvanecido
 
-		caja.slideDown("slow");	//Desplegar
+		caja.slideDown("slow", function(){
+			console.log("Cartel mostrado");
+		});	//Desplegar
 
 		//$("#caja").fadeTo("slow", 1);	// Opacidad Minima
 	});
@@ -34,7 +36,9 @@ $("#mostrar").hide();
 		$("#todoEnUno").click(function(){
 			//$("#caja").toggle('fast');		//Efecto recoger.
 			//$("#caja").fadeToggle('fast');	//Efecto desbanecer
-			caja.slideToggle('fast');		//Efecto  desplegar
+			caja.slideToggle('fast', function(){
+				console.log("Efecto realizado");
+			});		//Efecto  desplegar
 		});
 
 		$("#animar").click(function(){
