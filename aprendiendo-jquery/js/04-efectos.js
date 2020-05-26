@@ -23,8 +23,9 @@ $("#mostrar").hide();
 			//$("#caja").hide("fast");
 			//$("#caja").fadeOut("slow");	//Aparición
 		
-			caja.slideUp("slow");	//Retraer
-
+			caja.slideUp("slow", function(){
+				console.log("Cartel ocultado");
+			});	//Retraer
 			//$("#caja").fadeTo("slow", 0);	// Opacidad Maxima
 			});
 
