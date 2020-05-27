@@ -1,3 +1,5 @@
 $(document).ready(function(){
-	alert("Hola");
+	//Mover elemento por la pagina.
+	$('.elemento').draggable();
+
 });
