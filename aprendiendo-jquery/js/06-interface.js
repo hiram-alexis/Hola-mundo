@@ -21,4 +21,19 @@ $(document).ready(function(){
 		}
 	});
 
+	// Efectos
+	$("#mostrar").click(function(){
+	 	//$(".caja-efectos").fadeToggle();
+	 	//$(".caja-efectos").effect("explode");	//Solo se aplica el efecto pero no se queda el objeto.
+			//$(".caja-efectos").toggle("explode");
+			//$(".caja-efectos").toggle("drop");
+			//$(".caja-efectos").toggle("blind");
+			//$(".caja-efectos").toggle("slide");
+			//$(".caja-efectos").toggle("fold");
+			//$(".caja-efectos").toggle("puff");
+			//$(".caja-efectos").toggle("scale");
+			//$(".caja-efectos").toggle("shake", "slow");
+			$(".caja-efectos").toggle("shake", 4000); // Tarde un tiempo determinado
+				});
+
 });
