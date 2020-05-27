@@ -5,8 +5,12 @@ $(document).ready(function(){
 	// Redimencionar
 		$('.elemento').resizable();
 
-	// Seleccionar elementos
-	$(".lista-seleccionable").selectable();
-
+	// Seleccionar y ordenar elementos
+	//$(".lista-seleccionable").selectable();
+	$(".lista-seleccionable").sortable({
+		update: function(event, ui){
+			console.log("ah cambiado la lista");
+		}
+	});
 
 });
