@@ -36,4 +36,6 @@ $(document).ready(function(){
 			$(".caja-efectos").toggle("shake", 4000); // Tarde un tiempo determinado
 				});
 
+		//Tooltip
+		$(document).tooltip();
 });
